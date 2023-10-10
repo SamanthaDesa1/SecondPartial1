@@ -1,0 +1,60 @@
+https://replit.com/join/jgiveqqxgh-samanthadesaida
+
+def cm_to_inches():
+  x=base/2.54
+  return x
+def cm_to_feet():
+  x=base/3.48
+  return x
+
+def inches_to_cm():
+  x=base*2.54
+  return x
+def inches_to_feet():
+  x=base/12
+  return x
+
+def foot_to_cm():
+  x=base*3.48
+  return x
+def foot_to_inches():
+  x=base*12
+  return x
+
+print("What units do you want to convert?")
+print("Centimeters")
+print("Inches")
+print("Feet")
+type = (input())
+print("How many?")
+base=float(input())
+
+if type == "Centimeters":
+  print("To what unit do you want to convert it?")
+  print("Inches")
+  print("feet")
+  type1= input()
+  if type1== "Inches":
+    print("That would be", cm_to_inches(), "inches")
+  elif type1== "feet":
+    print("That would be", cm_to_feet(), "feet")
+
+elif type == "Inches":
+  print("To what unit do you want to convert it?")
+  print("1. centimeters")
+  print("3. feet")
+  type2= input()
+  if type2== "Centimeters":
+    print("That would be", inches_to_cm(), "centimeters")
+  elif type2== "feet":
+    print("That would be", inches_to_feet(), "feet")
+
+elif type == "feet":
+  print("To what unit do you want to convert it?")
+  print("centimeters")
+  print("inches")
+  type3= input()
+  if type3== "centimeters":
+    print("That would be", foot_to_cm(), "centimeters")
+  elif type3== "Inches":
+    print("That would be", foot_to_inches(), "inches")
