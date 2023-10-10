@@ -1,0 +1,13 @@
+https://replit.com/join/uxbhsqcmgf-samanthadesaida
+
+def cost():
+  x = miles/MPG*price
+  return x
+
+print("How many miles are you going to travel?")
+miles = int(input())
+print("What is your car's miles per gallon (MPG)?")
+MPG = int(input())
+print("What is the current price per gallon of gasoline?")
+price = int(input())
+print("The price of your trip will be",cost(),"dollars in gasoline")
