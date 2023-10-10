@@ -1,0 +1,41 @@
+https://replit.com/join/mucpyahsqq-samanthadesaida
+
+def discountA():
+  x1= int(price)*0.90
+  return x1
+
+def discountB():
+  x2 = int(price)*0.95
+  return x2
+
+def discountC():
+  x3 = int(price)*0.98
+  return x3
+
+def DiscountextraA():
+  x = discountA()*0.95
+  return x
+
+def DiscountextraB():
+  x = discountB()*0.95
+  return x
+
+def DiscountextraC():
+  x = discountC()*0.95
+
+print("what s the price of the product?:")
+price = input()
+print("what is the category you are buying (A,B or C):")
+category = input()
+print("How many units did you buy?")
+units = int(input())
+if category == "A":
+  print("Your final price will be",discountA(),"dollars")
+  if units >10 :
+    print("You have an additional discount, your final price will be", DiscountextraA())
+
+if category == "B":
+  print("Your final price will be",discountB(),"dollars")
+
+if category == "C":
+  print("Your final price will be",discountC(),"dollars")
