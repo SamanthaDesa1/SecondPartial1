@@ -1,0 +1,14 @@
+https://replit.com/join/psnzcacnlk-samanthadesaida
+
+current_age = int(input("What is your current age?  "))
+retire_age = int(input("At what age do you want to retire?  "))
+retirement_amount = int(input("What is your desired retirement amount?  ")) #this is FV 
+r = 0.25/12 #25%, divided by 12 to make it monthly
+n = (retire_age - current_age)*12
+t = retire_age - current_age
+
+upper = retirement_amount*r
+lower = (((1+r)**n)-1)*((1+r)**(-t))
+PMT = upper/lower
+
+print("The monthly payment requiered to reach the retirement goal is:",PMT,"dollars.")
