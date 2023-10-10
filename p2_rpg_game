@@ -1,0 +1,29 @@
+https://replit.com/join/smoszhougl-samanthadesaida
+import random
+
+print("Choose your character:")
+print("1. Queen")
+print("2. Princess")
+print("3. King")
+
+type=int(input())
+
+if type == 1:
+  print("You are now a Queen")
+elif type == 2:
+  print("You are now a Princess")
+elif type == 3: 
+  print("You are now a King")
+
+print("You are now face to face with a beast.")
+print("Roll a 20-sided dice to determine your success")
+print("Remember, any number less than 16 is failure")
+
+print("You roll the dice")
+
+number=int(random.randint(1,20))
+print("You rolled", number)
+if number<16:
+  print("you failed, the beast just defeated you")
+else:
+  print("yay! you won, you defeated the beast")
