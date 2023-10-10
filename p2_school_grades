@@ -1,0 +1,37 @@
+https://replit.com/join/ekeptvdgwe-samanthadesaida
+
+print("how many students are?")
+number_students = int(input())
+grades = []
+failed = []
+
+def students_grades():
+  grade = int(input("What is the grade of the student?  "))
+  return grade
+grade = 0
+  
+for _ in range(number_students):
+  prev_grade = grade 
+  grade = students_grades()
+  if grade > prev_grade:
+    highest_grade = grade
+    lowest_grade = prev_grade
+  elif grade < prev_grade:
+    lowest_grade = grade
+    highest_grade = prev_grade
+  else:
+    lowest_grade = grade
+    highest_grade = prev_grade
+  if grade < 60:
+    failed.append(grade)
+    
+  grades.append(grade)
+  
+average = sum(grades)/len(grades)
+number_failed = len(failed)
+number_passed = number_students - number_failed
+print("The highest grade is: ", highest_grade)
+print("The lowest grade is: ", lowest_grade)
+print("The average is: ", average)
+print("The number of students that failed the class: ", number_failed)
+print("The number of students that passed the class", number_passed)
