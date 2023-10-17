@@ -1,0 +1,21 @@
+https://replit.com/join/bcblxvfwir-samanthadesaida
+
+purchase = float(input("What was your purchase amount?  "))
+original_discount = (input("Does it have a discount?  "))
+if original_discount == "yes":
+  print("Of how much?")
+  discount_number = float(input())
+membership = (input("Do you have a membership?  "))
+
+if purchase > 100 or purchase == 100 and discount_number == 10 and membership == "yes":
+  print("You have been applied a 15% discount, 10% that was already and 5% extra")
+  x = purchase*discount_number/100
+  y = (purchase-x)*0.95
+  print("Your final price is",y)
+
+if purchase < 100 and membership == "yes":
+  print("Because of your membership you have been applied a 5% discount")
+  x2 = purchase*0.95
+  print("Your final price is",x2)
+else:
+  print("Your final price stays the same")
