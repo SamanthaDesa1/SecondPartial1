@@ -1,0 +1,38 @@
+https://replit.com/join/jqvphydhxy-samanthadesaida
+
+print("Hello! This is a questionary about your mental health")
+print("Please answer the questions with yes or no, then I'll give you recommendations")
+
+print("Do you do any kind of physical activity?")
+exercise = input()
+
+print("Do you sleep from 7 to 9 hours a day?")
+sleep = input()
+
+print("Do you consider yourself a social person?")
+social = input()
+
+print("Do you have a balanced diet?")
+diet = input()
+
+print("Do you practice meditation or yoga?")
+meditation = input()
+
+print("Do you like to spend time outside?")
+outside = input()
+
+if sleep == "yes" and exercise == "yes" and social == "yes" and diet == "yes" and meditation == "yes" and outside == "yes":
+  print("Your menta health is excellent! I don't have recommendations, keep it up! :)")
+else:
+  if sleep == "no":
+    print("You need to sleep well to be healthy physically and mentally.")
+  if exercise == "no":
+    print("Try to do physical activity at least 3 time a day. It's important")
+  if social == "no":
+    print("It is important to socialize with people, you can do it! trust yourself")
+  if diet == "no":
+    print("Eating balanced is very important, remember to not skip meals.")
+  if meditation == "no":
+    print("Meditation can help you with stress and anxiety, try it for 10 minutes a day")
+  if outside == "no":
+    print("You should try to spend more time outside, it will be good for you.")
