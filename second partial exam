@@ -1,0 +1,29 @@
+https://replit.com/join/rbyndiowtx-samanthadesaida
+
+print("What is your age?")
+age = int(input())
+print("How much do you weigh in kilograms?")
+weight = int(input())
+print("What is your physical activity? (sendentary, moderate or active)")
+activity = input()
+print("How tall are you in meters?")
+height = float(input())
+
+if age <= 18:
+  print("We recommend a high carbohydrate diet.")
+elif age >18 and age < 35:
+  print("We recommend a high protein and lower carbohydrate diet.")
+elif age > 35:
+  print("We recommend a low sugar diet")
+
+if age >= 18 and age <= 35 and activity == "sedentary" or activity =="moderate":
+  print("You need aerobic exercises.")
+
+BMI = weight/height**2
+
+if BMI < 18 and activity == "sedentary":
+  print("You need to consult a nutritionist and increase")
+elif BMI >= 18 and BMI < 25 and activity == "moderate" or activity == "active":
+  print("You are in good condition")
+elif BMI >= 25 and activity == "sedentary":
+  print("You need to consult a nutriologist, increase your physical activity,and reduce your weight.")
